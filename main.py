@@ -1,44 +1,43 @@
-print(1)
-def calculer_taxes_quebec(montant_hors_taxe):
-    """
-    Calcule la TPS et la TVQ pour un montant donné et retourne les détails.
+import requests
+from bs4 import BeautifulSoup
 
-    Args:
-        montant_hors_taxe (float): Le montant avant l'application des taxes.
 
-    Returns:
-        dict: Un dictionnaire contenant le montant original, la TPS, la TVQ,
-              le total des taxes et le montant final.
-    """
-    # Taux de taxes actuels
-    TPS_TAUX = 0.05  # 5%
-    TVQ_TAUX = 0.09975 # 9.975%
+def extraire_perspectives_canada(url):
+    try:
+        # 1. Requête avec des headers pour simuler un navigateur
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        reponse = requests.get(url, headers=headers)
+        reponse.raise_for_status()
 
-    # Calcul des taxes
-    tps = montant_hors_taxe * TPS_TAUX
-    tvq = montant_hors_taxe * TVQ_TAUX
+        # 2. Analyse HTML
+        soup = BeautifulSoup(reponse.text, 'html.parser')
 
-    # Calcul des totaux
-    total_taxes = tps + tvq
-    montant_total = montant_hors_taxe + total_taxes
+        # 3. Cibler le tableau des perspectives
+        # Le Guichet-Emplois utilise souvent des structures de tableaux standard
+        tableau = soup.find('table')
 
-    # Retourner un dictionnaire avec tous les détails
-    return {
-        "montant_original": montant_hors_taxe,
-        "tps": tps,
-        "tvq": tvq,
-        "total_taxes": total_taxes,
-        "montant_total": montant_total
-    }
+        if not tableau:
+            print("Tableau de données non trouvé.")
+            return
 
-# --- Exemple d'utilisation ---
-prix_item = 150.50
-resultats = calculer_taxes_quebec(prix_item)
+        print(f"Perspectives d'emploi (prochains 3 ans) - Source : Guichet-Emplois\n")
+        print(f"{'Province/Territoire':<30} | {'Perspectives'}")
+        print("-" * 50)
 
-# Afficher les résultats de manière formatée
-print(f"Montant original: {resultats['montant_original']:.2f} $")
-print(f"TPS (5%): {resultats['tps']:.2f} $")
-print(f"TVQ (9.975%): {resultats['tvq']:.2f} $")
-print("--------------------")
-print(f"Total des taxes: {resultats['total_taxes']:.2f} $")
-print(f"Montant total avec taxes: {resultats['montant_total']:.2f} $")
+        # 4. Parcourir les lignes du tableau (en sautant l'en-tête)
+        lignes = tableau.find_all('tr')
+        for ligne in lignes:
+            colonnes = ligne.find_all('td')
+            if len(colonnes) >= 2:
+                lieu = colonnes[0].get_text(strip=True)
+                # On nettoie le texte pour enlever les mentions de "étoiles"
+                perspective = colonnes[1].get_text(strip=True)
+                print(f"{lieu:<30} | {perspective}")
+
+    except Exception as e:
+        print(f"Erreur lors de la collecte : {e}")
+
+
+# URL spécifique fournie
+url_cible = "https://www.jobbank.gc.ca/marketreport/outlook-occupation/296608/ca"
+extraire_perspectives_canada(url_cible)
