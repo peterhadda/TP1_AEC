@@ -3,41 +3,41 @@ from bs4 import BeautifulSoup
 
 
 def extraire_perspectives_canada(url):
+    headers = {
+        "User-Agent": "Mozilla/5.0"
+    }
+
     try:
-        # 1. Requête avec des headers pour simuler un navigateur
-        headers = {'User-Agent': 'Mozilla/5.0'}
-        reponse = requests.get(url, headers=headers)
-        reponse.raise_for_status()
+        r = requests.get(url, headers=headers, timeout=20)
+        r.raise_for_status()
 
-        # 2. Analyse HTML
-        soup = BeautifulSoup(reponse.text, 'html.parser')
+        soup = BeautifulSoup(r.text, "html.parser")
 
-        # 3. Cibler le tableau des perspectives
-        # Le Guichet-Emplois utilise souvent des structures de tableaux standard
-        tableau = soup.find('table')
+        # On cible le bon tableau
+        tableau = soup.find("table", id="provoutlooktable_region")
 
         if not tableau:
-            print("Tableau de données non trouvé.")
+            print("Tableau non trouvé.")
             return
 
-        print(f"Perspectives d'emploi (prochains 3 ans) - Source : Guichet-Emplois\n")
-        print(f"{'Province/Territoire':<30} | {'Perspectives'}")
-        print("-" * 50)
+        print(f"{'Province/Territoire':<30} | {'Perspective'}")
+        print("-" * 55)
 
-        # 4. Parcourir les lignes du tableau (en sautant l'en-tête)
-        lignes = tableau.find_all('tr')
-        for ligne in lignes:
-            colonnes = ligne.find_all('td')
-            if len(colonnes) >= 2:
-                lieu = colonnes[0].get_text(strip=True)
-                # On nettoie le texte pour enlever les mentions de "étoiles"
-                perspective = colonnes[1].get_text(strip=True)
-                print(f"{lieu:<30} | {perspective}")
+        for ligne in tableau.select("tbody tr"):
+            # Province = dans le <th>
+            province_tag = ligne.find("th")
+
+            # Perspective = dans le span spécial
+            perspective_tag = ligne.select_one("span.outlooknote.value.object-nowrap")
+
+            if province_tag and perspective_tag:
+                province = province_tag.get_text(strip=True)
+                perspective = perspective_tag.get_text(strip=True)
+                print(f"{province:<30} | {perspective}")
 
     except Exception as e:
-        print(f"Erreur lors de la collecte : {e}")
+        print("Erreur :", e)
 
 
-# URL spécifique fournie
-url_cible = "https://www.jobbank.gc.ca/marketreport/outlook-occupation/296608/ca"
-extraire_perspectives_canada(url_cible)
+url = "https://www.jobbank.gc.ca/marketreport/outlook-occupation/296608/ca"
+extraire_perspectives_canada(url)
