@@ -13,7 +13,6 @@ def extraire_perspectives_canada(url):
 
         soup = BeautifulSoup(r.text, "html.parser")
 
-        # On cible le bon tableau
         tableau = soup.find("table", id="provoutlooktable_region")
 
         if not tableau:
@@ -24,10 +23,8 @@ def extraire_perspectives_canada(url):
         print("-" * 55)
 
         for ligne in tableau.select("tbody tr"):
-            # Province = dans le <th>
             province_tag = ligne.find("th")
 
-            # Perspective = dans le span spécial
             perspective_tag = ligne.select_one("span.outlooknote.value.object-nowrap")
 
             if province_tag and perspective_tag:
