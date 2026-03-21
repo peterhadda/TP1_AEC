@@ -1,0 +1,77 @@
+{
+    "Newfoundland and Labrador": {
+        "crime_rate": "41532",
+        "unemployment_rate": "10.4",
+        "total_tax_rate": "15%",
+        "job_persecptive": "Undetermined"
+    },
+    "Prince Edward Island": {
+        "crime_rate": "10667",
+        "unemployment_rate": "7.7",
+        "total_tax_rate": "15%",
+        "job_persecptive": "Undetermined"
+    },
+    "Nova Scotia": {
+        "crime_rate": "65882",
+        "unemployment_rate": "6.7",
+        "total_tax_rate": "14%",
+        "job_persecptive": "Moderate"
+    },
+    "New Brunswick": {
+        "crime_rate": "52444",
+        "unemployment_rate": "6.6",
+        "total_tax_rate": "15%",
+        "job_persecptive": "Moderate"
+    },
+    "Quebec": {
+        "crime_rate": "336692",
+        "unemployment_rate": "5.1",
+        "total_tax_rate": "14.975%",
+        "job_persecptive": "Limited"
+    },
+    "Ontario": {
+        "crime_rate": "718821",
+        "unemployment_rate": "7.3",
+        "total_tax_rate": "13%",
+        "job_persecptive": "Limited"
+    },
+    "Manitoba": {
+        "crime_rate": "151661",
+        "unemployment_rate": "6.1",
+        "total_tax_rate": "12%",
+        "job_persecptive": "Undetermined"
+    },
+    "Saskatchewan": {
+        "crime_rate": "156234",
+        "unemployment_rate": "5.6",
+        "total_tax_rate": "11%",
+        "job_persecptive": "Moderate"
+    },
+    "Alberta": {
+        "crime_rate": "359230",
+        "unemployment_rate": "6.5",
+        "total_tax_rate": "5%",
+        "job_persecptive": "Moderate"
+    },
+    "British Columbia": {
+        "crime_rate": "390950",
+        "unemployment_rate": "6.4",
+        "total_tax_rate": "12%",
+        "job_persecptive": "Moderate"
+    },
+    "Yukon": {
+        "crime_rate": "10218",
+        "total_tax_rate": "5%",
+        "job_persecptive": "Undetermined"
+    },
+    "Northwest Territories": {
+        "crime_rate": "24241",
+        "total_tax_rate": "5%",
+        "job_persecptive": "Undetermined"
+    },
+    "Nunavut": {
+        "crime_rate": "22339",
+        "total_tax_rate": "5%",
+        "job_persecptive": "Undetermined"
+    }
+}
