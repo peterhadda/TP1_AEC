@@ -6,8 +6,8 @@
         "total_tax_rate": "15%",
         "cout_hebdomadaire_nourriture_par_personne": 45.9,
         "cout_hebdomadaire_autres_produits_par_personne": 1.87,
-        "job_persecptive": "Undetermined",
-        "latino_americain": 750
+        "latino_americain": 750,
+        "electricite_cents_kwh": 15.79
     },
     "Prince Edward Island": {
         "nombre_crime": "10667",
@@ -16,8 +16,8 @@
         "total_tax_rate": "15%",
         "cout_hebdomadaire_nourriture_par_personne": 43.44,
         "cout_hebdomadaire_autres_produits_par_personne": 1.94,
-        "job_persecptive": "Undetermined",
-        "latino_americain": 590
+        "latino_americain": 590,
+        "electricite_cents_kwh": 20.44
     },
     "Nova Scotia": {
         "nombre_crime": "65882",
@@ -26,8 +26,8 @@
         "total_tax_rate": "14%",
         "cout_hebdomadaire_nourriture_par_personne": 44.32,
         "cout_hebdomadaire_autres_produits_par_personne": 1.96,
-        "job_persecptive": "Moderate",
-        "latino_americain": 2910
+        "latino_americain": 2910,
+        "electricite_cents_kwh": 19.19
     },
     "New Brunswick": {
         "nombre_crime": "52444",
@@ -36,8 +36,8 @@
         "total_tax_rate": "15%",
         "cout_hebdomadaire_nourriture_par_personne": 43.86,
         "cout_hebdomadaire_autres_produits_par_personne": 1.95,
-        "job_persecptive": "Moderate",
-        "latino_americain": 2455
+        "latino_americain": 2455,
+        "electricite_cents_kwh": 16.8
     },
     "Quebec": {
         "nombre_crime": "336692",
@@ -46,8 +46,8 @@
         "total_tax_rate": "14.975%",
         "cout_hebdomadaire_nourriture_par_personne": 41.19,
         "cout_hebdomadaire_autres_produits_par_personne": 1.76,
-        "job_persecptive": "Limited",
-        "latino_americain": 172920
+        "latino_americain": 172920,
+        "electricite_cents_kwh": 8.98
     },
     "Ontario": {
         "nombre_crime": "718821",
@@ -56,16 +56,16 @@
         "total_tax_rate": "13%",
         "cout_hebdomadaire_nourriture_par_personne": 42.89,
         "cout_hebdomadaire_autres_produits_par_personne": 1.88,
-        "job_persecptive": "Limited",
-        "latino_americain": 249190
+        "latino_americain": 249190,
+        "electricite_cents_kwh": 15.92
     },
     "Manitoba": {
         "nombre_crime": "151661",
         "avg_temperature": 4.55,
         "unemployment_rate": "6.1",
         "total_tax_rate": "12%",
-        "job_persecptive": "Undetermined",
-        "latino_americain": 12835
+        "latino_americain": 12835,
+        "electricite_cents_kwh": 11.74
     },
     "Saskatchewan": {
         "nombre_crime": "156234",
@@ -74,8 +74,8 @@
         "total_tax_rate": "11%",
         "cout_hebdomadaire_nourriture_par_personne": 44.38,
         "cout_hebdomadaire_autres_produits_par_personne": 2.0,
-        "job_persecptive": "Moderate",
-        "latino_americain": 5685
+        "latino_americain": 5685,
+        "electricite_cents_kwh": 21.64
     },
     "Alberta": {
         "nombre_crime": "359230",
@@ -84,8 +84,8 @@
         "total_tax_rate": "5%",
         "cout_hebdomadaire_nourriture_par_personne": 45.62,
         "cout_hebdomadaire_autres_produits_par_personne": 2.04,
-        "job_persecptive": "Moderate",
-        "latino_americain": 66515
+        "latino_americain": 66515,
+        "electricite_cents_kwh": 31.29
     },
     "British Columbia": {
         "nombre_crime": "390950",
@@ -94,7 +94,7 @@
         "total_tax_rate": "12%",
         "cout_hebdomadaire_nourriture_par_personne": 45.67,
         "cout_hebdomadaire_autres_produits_par_personne": 2.02,
-        "job_persecptive": "Moderate",
-        "latino_americain": 65965
+        "latino_americain": 65965,
+        "electricite_cents_kwh": 12.4
     }
 }

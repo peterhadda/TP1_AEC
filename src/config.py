@@ -10,6 +10,7 @@ CONFIG = {
     "output_file": "provinces_data.json",
     "latino_population_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=9810035101",
     "latino_population_download_url": "https://www150.statcan.gc.ca/n1/tbl/csv/98100351-fra.zip",
+    "electricity_cost_url": "https://wowa.ca/cout-de-la-vie-canada",
     "excluded_provinces": {
         "Yukon",
         "Northwest Territories",
@@ -87,6 +88,12 @@ CONFIG = {
             "province_field": "province",
             "value_field": "latino_americain",
             "final_field": "latino_americain",
+        },
+        "electricity_prices": {
+            "script": "electricity_prices.py",
+            "province_field": "province",
+            "value_field": "electricite_cents_kwh",
+            "final_field": "electricite_cents_kwh",
         },
     },
 }
