@@ -1,4 +1,4 @@
-import requests
+﻿import requests
 from bs4 import BeautifulSoup
 
 
@@ -15,7 +15,6 @@ def extraire_perspectives_canada(url):
         tableau = soup.find("table", id="provoutlooktable_region")
 
         if not tableau:
-            print("Tableau non trouve.")
             return []
 
         perspectives = []
