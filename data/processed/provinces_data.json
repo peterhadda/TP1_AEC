@@ -64,6 +64,8 @@
         "avg_temperature": 4.55,
         "unemployment_rate": "6.1",
         "total_tax_rate": "12%",
+        "cout_hebdomadaire_nourriture_par_personne": 44.19,
+        "cout_hebdomadaire_autres_produits_par_personne": 1.96,
         "latino_americain": 12835,
         "electricite_cents_kwh": 11.74
     },
