@@ -21,4 +21,3 @@ df_final=df[['province',crime_rate_col]]
 
 df_final=df_final.rename(columns={crime_rate_col:"crime_rate"})
 
-print(df_final)

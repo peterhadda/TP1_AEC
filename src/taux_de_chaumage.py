@@ -20,4 +20,3 @@ provinces=[]
 for province,rate in matches:
     provinces.append({"provinces":province,"rate":rate})
 
-print(provinces)

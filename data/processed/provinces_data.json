@@ -1,77 +1,100 @@
 {
     "Newfoundland and Labrador": {
         "nombre_crime": "41532",
+        "avg_temperature": 6.6,
         "unemployment_rate": "10.4",
         "total_tax_rate": "15%",
-        "job_persecptive": "Undetermined"
+        "cout_hebdomadaire_nourriture_par_personne": 45.9,
+        "cout_hebdomadaire_autres_produits_par_personne": 1.87,
+        "job_persecptive": "Undetermined",
+        "latino_americain": 750
     },
     "Prince Edward Island": {
         "nombre_crime": "10667",
+        "avg_temperature": 7.1,
         "unemployment_rate": "7.7",
         "total_tax_rate": "15%",
-        "job_persecptive": "Undetermined"
+        "cout_hebdomadaire_nourriture_par_personne": 43.44,
+        "cout_hebdomadaire_autres_produits_par_personne": 1.94,
+        "job_persecptive": "Undetermined",
+        "latino_americain": 590
     },
     "Nova Scotia": {
         "nombre_crime": "65882",
+        "avg_temperature": 8.01,
         "unemployment_rate": "6.7",
         "total_tax_rate": "14%",
-        "job_persecptive": "Moderate"
+        "cout_hebdomadaire_nourriture_par_personne": 44.32,
+        "cout_hebdomadaire_autres_produits_par_personne": 1.96,
+        "job_persecptive": "Moderate",
+        "latino_americain": 2910
     },
     "New Brunswick": {
         "nombre_crime": "52444",
+        "avg_temperature": 6.56,
         "unemployment_rate": "6.6",
         "total_tax_rate": "15%",
-        "job_persecptive": "Moderate"
+        "cout_hebdomadaire_nourriture_par_personne": 43.86,
+        "cout_hebdomadaire_autres_produits_par_personne": 1.95,
+        "job_persecptive": "Moderate",
+        "latino_americain": 2455
     },
     "Quebec": {
         "nombre_crime": "336692",
+        "avg_temperature": 7.38,
         "unemployment_rate": "5.1",
         "total_tax_rate": "14.975%",
-        "job_persecptive": "Limited"
+        "cout_hebdomadaire_nourriture_par_personne": 41.19,
+        "cout_hebdomadaire_autres_produits_par_personne": 1.76,
+        "job_persecptive": "Limited",
+        "latino_americain": 172920
     },
     "Ontario": {
         "nombre_crime": "718821",
+        "avg_temperature": 8.95,
         "unemployment_rate": "7.3",
         "total_tax_rate": "13%",
-        "job_persecptive": "Limited"
+        "cout_hebdomadaire_nourriture_par_personne": 42.89,
+        "cout_hebdomadaire_autres_produits_par_personne": 1.88,
+        "job_persecptive": "Limited",
+        "latino_americain": 249190
     },
     "Manitoba": {
         "nombre_crime": "151661",
+        "avg_temperature": 4.55,
         "unemployment_rate": "6.1",
         "total_tax_rate": "12%",
-        "job_persecptive": "Undetermined"
+        "job_persecptive": "Undetermined",
+        "latino_americain": 12835
     },
     "Saskatchewan": {
         "nombre_crime": "156234",
+        "avg_temperature": 3.91,
         "unemployment_rate": "5.6",
         "total_tax_rate": "11%",
-        "job_persecptive": "Moderate"
+        "cout_hebdomadaire_nourriture_par_personne": 44.38,
+        "cout_hebdomadaire_autres_produits_par_personne": 2.0,
+        "job_persecptive": "Moderate",
+        "latino_americain": 5685
     },
     "Alberta": {
         "nombre_crime": "359230",
+        "avg_temperature": 4.98,
         "unemployment_rate": "6.5",
         "total_tax_rate": "5%",
-        "job_persecptive": "Moderate"
+        "cout_hebdomadaire_nourriture_par_personne": 45.62,
+        "cout_hebdomadaire_autres_produits_par_personne": 2.04,
+        "job_persecptive": "Moderate",
+        "latino_americain": 66515
     },
     "British Columbia": {
         "nombre_crime": "390950",
+        "avg_temperature": 10.6,
         "unemployment_rate": "6.4",
         "total_tax_rate": "12%",
-        "job_persecptive": "Moderate"
-    },
-    "Yukon": {
-        "nombre_crime": "10218",
-        "total_tax_rate": "5%",
-        "job_persecptive": "Undetermined"
-    },
-    "Northwest Territories": {
-        "nombre_crime": "24241",
-        "total_tax_rate": "5%",
-        "job_persecptive": "Undetermined"
-    },
-    "Nunavut": {
-        "nombre_crime": "22339",
-        "total_tax_rate": "5%",
-        "job_persecptive": "Undetermined"
+        "cout_hebdomadaire_nourriture_par_personne": 45.67,
+        "cout_hebdomadaire_autres_produits_par_personne": 2.02,
+        "job_persecptive": "Moderate",
+        "latino_americain": 65965
     }
 }

@@ -25,7 +25,7 @@ def import_module(script_name):
 
 def add_value(data, province, field, value):
     province = normalize_province(province)
-    if not province:
+    if not province or province in CONFIG["excluded_provinces"]:
         return
 
     if province not in data:

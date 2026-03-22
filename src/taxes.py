@@ -12,4 +12,4 @@ tables = pd.read_html(StringIO(html))
 df = tables[0]
 
 result = df[["Province", "Total Tax Rate"]]
-print(result)
+
