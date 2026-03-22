@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ae50d26-2c41-4e8a-b2d7-bd37f3045bdb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TP1_AEC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TP1_AEC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Perspective.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sales.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/weather.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taxes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/provinces_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/provinces_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +113,7 @@
       <recent name="C:\Users\Aymen\Desktop\TP1_AEC\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aymen\Desktop\TP1_AEC\data\raw" />
       <recent name="C:\Users\Aymen\Desktop\TP1_AEC\src" />
       <recent name="C:\Users\Aymen\Desktop\TP1_AEC\data" />
     </key>
@@ -256,7 +250,7 @@
       <updated>1772067816649</updated>
       <workItem from="1772067818316" duration="594000" />
       <workItem from="1772068432712" duration="12000" />
-      <workItem from="1774131388435" duration="1469000" />
+      <workItem from="1774131388435" duration="4798000" />
     </task>
     <servers />
   </component>
@@ -264,7 +258,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TP1_AEC$main.coverage" NAME="main Coverage Results" MODIFIED="1774132841048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/TP1_AEC$main.coverage" NAME="main Coverage Results" MODIFIED="1774135497038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TP1_AEC$Perspective.coverage" NAME="Perspective Coverage Results" MODIFIED="1774132366467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

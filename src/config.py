@@ -33,7 +33,7 @@ CONFIG = {
             "script": "crime_rate.py",
             "province_field": "province",
             "value_field": "crime_rate",
-            "final_field": "crime_rate"
+            "final_field": "nombre_crime"
         },
         "weather": {
             "script": "weather.py",
