@@ -77,6 +77,27 @@ def run():
         )
     ].copy()
 
+    # Garder uniquement les vraies categories d'industries (codes SCIAN entre crochets)
+    filtered = filtered[
+        filtered[char_col].astype(str).str.contains(r"\[[0-9]{2}(?:-[0-9]{2})?\]", na=False, regex=True)
+    ].copy()
+
+    # Exclure des dimensions non-industrielles qui peuvent encore passer dans certains jeux de donnees
+    excluded_keywords = [
+        "proprietaire",
+        "age de l'entreprise",
+        "employees",
+        "employes",
+        "a importe",
+        "a exporte",
+        "a transfere",
+        "activites commerciales internationales",
+        "activite de l'entreprise",
+    ]
+    filtered = filtered[
+        ~filtered[char_col].astype(str).map(normalize_text).str.contains("|".join(excluded_keywords), na=False, regex=True)
+    ].copy()
+
     filtered[value_col] = pd.to_numeric(filtered[value_col], errors="coerce")
     filtered = filtered.dropna(subset=[value_col])
 
