@@ -53,6 +53,7 @@ def run():
     if char_col is None:
         raise ValueError("Impossible de trouver la colonne de caracteristiques d'entreprise.")
 
+    # On garde uniquement les lignes ou l'IA est utilisee
     mask_ai_used = df[ai_col].astype(str).str.contains(
         r"^\s*(?:Oui,|Yes,)",
         case=False,
@@ -60,20 +61,37 @@ def run():
         regex=True,
     )
 
-    mask_all_industries = df[char_col].astype(str).str.contains(
-        "ensemble des industries|all industries",
-        case=False,
-        na=False,
-        regex=True,
-    )
+    filtered = df.loc[mask_ai_used, [geo_col, char_col, value_col]].copy()
 
-    filtered = df.loc[mask_ai_used & mask_all_industries, [geo_col, value_col]].copy()
-
+    # Filtrer seulement les provinces voulues
     wanted = {normalize_text(p) for p in CONFIG["ai_usage_provinces"]}
     filtered = filtered[filtered[geo_col].astype(str).map(normalize_text).isin(wanted)].copy()
 
+    # Enlever la ligne 'ensemble des industries' pour garder le detail par industrie
+    filtered = filtered[
+        ~filtered[char_col].astype(str).str.contains(
+            "ensemble des industries|all industries",
+            case=False,
+            na=False,
+            regex=True,
+        )
+    ].copy()
+
     filtered[value_col] = pd.to_numeric(filtered[value_col], errors="coerce")
     filtered = filtered.dropna(subset=[value_col])
-    filtered = filtered.drop_duplicates(subset=[geo_col], keep="first")
 
-    return dict(zip(filtered[geo_col], filtered[value_col]))
+    # S'il y a des doublons province + industrie, on garde la premiere
+    filtered = filtered.drop_duplicates(subset=[geo_col, char_col], keep="first")
+
+    result = {}
+    for _, row in filtered.iterrows():
+        province = row[geo_col]
+        industry = row[char_col]
+        value = float(row[value_col])
+
+        if province not in result:
+            result[province] = {}
+
+        result[province][industry] = value
+
+    return result

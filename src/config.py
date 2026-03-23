@@ -125,13 +125,13 @@ CONFIG = {
             "script": "floods.py",
             "province_field": None,
             "value_field": None,
-            "final_field": "floods",
+            "final_field": "possibility_no_floods",
         },
         "ai_usage": {
             "script": "ai_usage.py",
             "province_field": None,
             "value_field": None,
-            "final_field": "ai_usage_percent",
+            "final_field": "usage_de_techonologie_ia",
         },
     },
 }
