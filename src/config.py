@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent
@@ -12,6 +12,19 @@ CONFIG = {
     "latino_population_download_url": "https://www150.statcan.gc.ca/n1/tbl/csv/98100351-fra.zip",
     "electricity_cost_url": "https://wowa.ca/cout-de-la-vie-canada",
     "floods_url": "https://www150.statcan.gc.ca/n1/pub/75-006-x/2025002/article/00001-eng.htm",
+    "ai_usage_zip_url": "https://www150.statcan.gc.ca/n1/tbl/csv/33100825-fra.zip",
+    "ai_usage_provinces": [
+        "Terre-Neuve-et-Labrador",
+        "Ile-du-Prince-Edouard",
+        "Nouvelle-Ecosse",
+        "Nouveau-Brunswick",
+        "Quebec",
+        "Ontario",
+        "Manitoba",
+        "Saskatchewan",
+        "Alberta",
+        "Colombie-Britannique",
+    ],
     "floods_provinces": [
         "British Columbia",
         "Alberta",
@@ -113,6 +126,12 @@ CONFIG = {
             "province_field": None,
             "value_field": None,
             "final_field": "floods",
+        },
+        "ai_usage": {
+            "script": "ai_usage.py",
+            "province_field": None,
+            "value_field": None,
+            "final_field": "ai_usage_percent",
         },
     },
 }

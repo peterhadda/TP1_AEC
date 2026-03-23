@@ -9,7 +9,8 @@
         "job_persecptive": "Undetermined",
         "latino_americain": 750,
         "electricite_cents_kwh": 15.79,
-        "floods": 100.0
+        "floods": 100.0,
+        "ai_usage_percent": 3.8
     },
     "Prince Edward Island": {
         "nombre_crime": "10667",
@@ -21,7 +22,8 @@
         "job_persecptive": "Undetermined",
         "latino_americain": 590,
         "electricite_cents_kwh": 20.44,
-        "floods": 100.0
+        "floods": 100.0,
+        "ai_usage_percent": 3.9
     },
     "Nova Scotia": {
         "nombre_crime": "65882",
@@ -33,7 +35,8 @@
         "job_persecptive": "Moderate",
         "latino_americain": 2910,
         "electricite_cents_kwh": 19.19,
-        "floods": 100.0
+        "floods": 100.0,
+        "ai_usage_percent": 5.8
     },
     "New Brunswick": {
         "nombre_crime": "52444",
@@ -45,7 +48,8 @@
         "job_persecptive": "Moderate",
         "latino_americain": 2455,
         "electricite_cents_kwh": 16.8,
-        "floods": 25.1
+        "floods": 25.1,
+        "ai_usage_percent": 4.8
     },
     "Quebec": {
         "nombre_crime": "336692",
@@ -57,7 +61,8 @@
         "job_persecptive": "Limited",
         "latino_americain": 172920,
         "electricite_cents_kwh": 8.98,
-        "floods": 15.8
+        "floods": 15.8,
+        "ai_usage_percent": 9.4
     },
     "Ontario": {
         "nombre_crime": "718821",
@@ -69,7 +74,8 @@
         "job_persecptive": "Limited",
         "latino_americain": 249190,
         "electricite_cents_kwh": 15.92,
-        "floods": 4.0
+        "floods": 4.0,
+        "ai_usage_percent": 5.5
     },
     "Manitoba": {
         "nombre_crime": "151661",
@@ -81,7 +87,8 @@
         "job_persecptive": "Undetermined",
         "latino_americain": 12835,
         "electricite_cents_kwh": 11.74,
-        "floods": 32.7
+        "floods": 32.7,
+        "ai_usage_percent": 4.0
     },
     "Saskatchewan": {
         "nombre_crime": "156234",
@@ -93,7 +100,8 @@
         "job_persecptive": "Moderate",
         "latino_americain": 5685,
         "electricite_cents_kwh": 21.64,
-        "floods": 100.0
+        "floods": 100.0,
+        "ai_usage_percent": 5.8
     },
     "Alberta": {
         "nombre_crime": "359230",
@@ -105,7 +113,8 @@
         "job_persecptive": "Moderate",
         "latino_americain": 66515,
         "electricite_cents_kwh": 31.29,
-        "floods": 2.2
+        "floods": 2.2,
+        "ai_usage_percent": 5.1
     },
     "British Columbia": {
         "nombre_crime": "390950",
@@ -117,6 +126,7 @@
         "job_persecptive": "Moderate",
         "latino_americain": 65965,
         "electricite_cents_kwh": 12.4,
-        "floods": 7.7
+        "floods": 7.7,
+        "ai_usage_percent": 5.1
     }
 }
