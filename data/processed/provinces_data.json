@@ -9,6 +9,7 @@
         "job_persecptive": "Undetermined",
         "latino_americain": 750,
         "electricite_cents_kwh": 15.79,
+        "essence_ordinaire_cents_litre": 144.3,
         "possibility_no_floods": 100.0,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
@@ -39,6 +40,7 @@
         "job_persecptive": "Undetermined",
         "latino_americain": 590,
         "electricite_cents_kwh": 20.44,
+        "essence_ordinaire_cents_litre": 147.5,
         "possibility_no_floods": 100.0,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
@@ -68,6 +70,7 @@
         "job_persecptive": "Moderate",
         "latino_americain": 2910,
         "electricite_cents_kwh": 19.19,
+        "essence_ordinaire_cents_litre": 136.5,
         "possibility_no_floods": 100.0,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
@@ -98,6 +101,7 @@
         "job_persecptive": "Moderate",
         "latino_americain": 2455,
         "electricite_cents_kwh": 16.8,
+        "essence_ordinaire_cents_litre": 134.7,
         "possibility_no_floods": 74.9,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
@@ -128,6 +132,7 @@
         "job_persecptive": "Limited",
         "latino_americain": 172920,
         "electricite_cents_kwh": 8.98,
+        "essence_ordinaire_cents_litre": 146.3,
         "possibility_no_floods": 84.2,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
@@ -158,6 +163,7 @@
         "job_persecptive": "Limited",
         "latino_americain": 249190,
         "electricite_cents_kwh": 15.92,
+        "essence_ordinaire_cents_litre": 129.3,
         "possibility_no_floods": 96.0,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 1.9,
@@ -188,6 +194,7 @@
         "job_persecptive": "Undetermined",
         "latino_americain": 12835,
         "electricite_cents_kwh": 11.74,
+        "essence_ordinaire_cents_litre": 123.3,
         "possibility_no_floods": 67.3,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
@@ -218,6 +225,7 @@
         "job_persecptive": "Moderate",
         "latino_americain": 5685,
         "electricite_cents_kwh": 21.64,
+        "essence_ordinaire_cents_litre": 125.3,
         "possibility_no_floods": 100.0,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
@@ -248,6 +256,7 @@
         "job_persecptive": "Moderate",
         "latino_americain": 66515,
         "electricite_cents_kwh": 31.29,
+        "essence_ordinaire_cents_litre": 120.3,
         "possibility_no_floods": 97.8,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 1.7,
@@ -278,6 +287,7 @@
         "job_persecptive": "Moderate",
         "latino_americain": 65965,
         "electricite_cents_kwh": 12.4,
+        "essence_ordinaire_cents_litre": 168.95,
         "possibility_no_floods": 92.3,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.6,
