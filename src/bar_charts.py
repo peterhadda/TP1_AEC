@@ -8,7 +8,7 @@ from config import CONFIG
 
 
 METRICS = [
-    ("severity_index", "Indice de severite du crime", "severity_crime_pie.png"),
+    ("severity_index", "Taux de crime", "severity_crime_pie.png"),
     ("essence_ordinaire_cents_litre", "Prix de l'essence (cents/litre)", "gas_prices.png"),
     ("avg_temperature", "Temperature moyenne (C)", "weather.png"),
 ]

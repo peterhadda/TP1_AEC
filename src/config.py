@@ -117,7 +117,7 @@ CONFIG = {
             "script": "latino_minority.py",
             "province_field": "province",
             "value_field": "latino_americain",
-            "final_field": "latino_americain",
+            "final_field": "communaute_latine",
         },
         "electricity_prices": {
             "script": "electricity_prices.py",
