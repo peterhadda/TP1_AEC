@@ -1,23 +1,26 @@
 import pandas as pd
-url="https://www150.statcan.gc.ca/n1/daily-quotidien/250722/t003a-eng.htm"
 
-df=pd.read_html(url)[0]
+url = "https://www150.statcan.gc.ca/n1/daily-quotidien/250722/t003a-eng.htm"
 
-df_columns=[
-    "_".join([str(x) for x in col if str(x)!="nan"]).strip("_")
-    if isinstance(col,tuple) else str(col)
+df = pd.read_html(url)[0]
+
+df_columns = [
+    "_".join([str(x) for x in col if str(x) != "nan"]).strip("_")
+    if isinstance(col, tuple) else str(col)
     for col in df.columns
 ]
 
-df=df.rename(columns={df.columns[0]:"province"})
+df.columns = df_columns
 
-df=df[df["province"] !="Canada"]
+df = df.rename(columns={df.columns[0]: "province"})
 
-crime_rate=[col for col in df.columns if "rate" in col.lower()]
+df = df[df["province"] != "Canada"]
 
-crime_rate_col=crime_rate[0]
+severity_cols = [col for col in df.columns if "severity" in col.lower()]
 
-df_final=df[['province',crime_rate_col]]
+if not severity_cols:
+    raise ValueError("No severity index column found in crime_rate source table")
 
-df_final=df_final.rename(columns={crime_rate_col:"crime_rate"})
+severity_col = severity_cols[0]
 
+df_final = df[["province", severity_col]].rename(columns={severity_col: "severity_index"})

@@ -1,6 +1,6 @@
 {
     "Newfoundland and Labrador": {
-        "nombre_crime": "41532",
+        "severity_index": "89.3",
         "avg_temperature": 6.6,
         "unemployment_rate": "10.4",
         "total_tax_rate": "15%",
@@ -10,7 +10,6 @@
         "latino_americain": 750,
         "electricite_cents_kwh": 15.79,
         "essence_ordinaire_cents_litre": 144.3,
-        "possibility_no_floods": 100.0,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
             "Extraction minière, exploitation en carrière, et extraction de pétrole et de gaz [21]": 0.0,
@@ -31,7 +30,7 @@
         }
     },
     "Prince Edward Island": {
-        "nombre_crime": "10667",
+        "severity_index": "72.6",
         "avg_temperature": 7.1,
         "unemployment_rate": "7.7",
         "total_tax_rate": "15%",
@@ -41,7 +40,6 @@
         "latino_americain": 590,
         "electricite_cents_kwh": 20.44,
         "essence_ordinaire_cents_litre": 147.5,
-        "possibility_no_floods": 100.0,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
             "Construction [23]": 0.0,
@@ -61,7 +59,7 @@
         }
     },
     "Nova Scotia": {
-        "nombre_crime": "65882",
+        "severity_index": "75.5",
         "avg_temperature": 8.01,
         "unemployment_rate": "6.7",
         "total_tax_rate": "14%",
@@ -71,7 +69,6 @@
         "latino_americain": 2910,
         "electricite_cents_kwh": 19.19,
         "essence_ordinaire_cents_litre": 136.5,
-        "possibility_no_floods": 100.0,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
             "Extraction minière, exploitation en carrière, et extraction de pétrole et de gaz [21]": 0.0,
@@ -92,7 +89,7 @@
         }
     },
     "New Brunswick": {
-        "nombre_crime": "52444",
+        "severity_index": "84.5",
         "avg_temperature": 6.56,
         "unemployment_rate": "6.6",
         "total_tax_rate": "15%",
@@ -102,7 +99,6 @@
         "latino_americain": 2455,
         "electricite_cents_kwh": 16.8,
         "essence_ordinaire_cents_litre": 134.7,
-        "possibility_no_floods": 74.9,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
             "Extraction minière, exploitation en carrière, et extraction de pétrole et de gaz [21]": 13.0,
@@ -123,7 +119,7 @@
         }
     },
     "Quebec": {
-        "nombre_crime": "336692",
+        "severity_index": "63.0",
         "avg_temperature": 7.38,
         "unemployment_rate": "5.1",
         "total_tax_rate": "14.975%",
@@ -133,7 +129,6 @@
         "latino_americain": 172920,
         "electricite_cents_kwh": 8.98,
         "essence_ordinaire_cents_litre": 146.3,
-        "possibility_no_floods": 84.2,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
             "Extraction minière, exploitation en carrière, et extraction de pétrole et de gaz [21]": 1.8,
@@ -154,7 +149,7 @@
         }
     },
     "Ontario": {
-        "nombre_crime": "718821",
+        "severity_index": "60.7",
         "avg_temperature": 8.95,
         "unemployment_rate": "7.3",
         "total_tax_rate": "13%",
@@ -164,7 +159,6 @@
         "latino_americain": 249190,
         "electricite_cents_kwh": 15.92,
         "essence_ordinaire_cents_litre": 129.3,
-        "possibility_no_floods": 96.0,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 1.9,
             "Extraction minière, exploitation en carrière, et extraction de pétrole et de gaz [21]": 3.6,
@@ -185,7 +179,7 @@
         }
     },
     "Manitoba": {
-        "nombre_crime": "151661",
+        "severity_index": "141.2",
         "avg_temperature": 4.55,
         "unemployment_rate": "6.1",
         "total_tax_rate": "12%",
@@ -195,7 +189,6 @@
         "latino_americain": 12835,
         "electricite_cents_kwh": 11.74,
         "essence_ordinaire_cents_litre": 123.3,
-        "possibility_no_floods": 67.3,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
             "Extraction minière, exploitation en carrière, et extraction de pétrole et de gaz [21]": 1.0,
@@ -216,7 +209,7 @@
         }
     },
     "Saskatchewan": {
-        "nombre_crime": "156234",
+        "severity_index": "153.9",
         "avg_temperature": 3.91,
         "unemployment_rate": "5.6",
         "total_tax_rate": "11%",
@@ -226,7 +219,6 @@
         "latino_americain": 5685,
         "electricite_cents_kwh": 21.64,
         "essence_ordinaire_cents_litre": 125.3,
-        "possibility_no_floods": 100.0,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.0,
             "Extraction minière, exploitation en carrière, et extraction de pétrole et de gaz [21]": 2.1,
@@ -247,7 +239,7 @@
         }
     },
     "Alberta": {
-        "nombre_crime": "359230",
+        "severity_index": "95.6",
         "avg_temperature": 4.98,
         "unemployment_rate": "6.5",
         "total_tax_rate": "5%",
@@ -257,7 +249,6 @@
         "latino_americain": 66515,
         "electricite_cents_kwh": 31.29,
         "essence_ordinaire_cents_litre": 120.3,
-        "possibility_no_floods": 97.8,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 1.7,
             "Extraction minière, exploitation en carrière, et extraction de pétrole et de gaz [21]": 0.3,
@@ -278,7 +269,7 @@
         }
     },
     "British Columbia": {
-        "nombre_crime": "390950",
+        "severity_index": "93.0",
         "avg_temperature": 10.6,
         "unemployment_rate": "6.4",
         "total_tax_rate": "12%",
@@ -288,7 +279,6 @@
         "latino_americain": 65965,
         "electricite_cents_kwh": 12.4,
         "essence_ordinaire_cents_litre": 168.95,
-        "possibility_no_floods": 92.3,
         "usage_de_techonologie_ia": {
             "Agriculture, foresterie, pêche et chasse [11]": 0.6,
             "Extraction minière, exploitation en carrière, et extraction de pétrole et de gaz [21]": 2.7,

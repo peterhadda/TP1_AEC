@@ -74,8 +74,8 @@ CONFIG = {
         "crime_rate": {
             "script": "crime_rate.py",
             "province_field": "province",
-            "value_field": "crime_rate",
-            "final_field": "nombre_crime",
+            "value_field": "severity_index",
+            "final_field": "severity_index",
         },
         "weather": {
             "script": "weather.py",
