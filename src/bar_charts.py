@@ -39,7 +39,8 @@ def save_bar_chart(df: pd.DataFrame, column: str, title: str, filename: str) -> 
     chart_df = chart_df.dropna(subset=[column]).sort_values(column, ascending=False)
 
     plt.figure(figsize=(12, 6))
-    plt.bar(chart_df["province"], chart_df[column], color="#2a9d8f")
+    colors = plt.cm.tab20(range(len(chart_df)))
+    plt.bar(chart_df["province"], chart_df[column], color=colors)
     plt.title(title)
     plt.xlabel("Province")
     plt.ylabel(column)
