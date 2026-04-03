@@ -3,7 +3,9 @@
 Projet Python qui agrège plusieurs indicateurs par province canadienne et génère:
 - un fichier JSON consolidé
 - des graphiques (barres + circulaire)
-- Notre Donnees organiser est '''bash provinces_data.json'''
+- Notre Donnees organiser est '''bash
+- provinces_data.json
+- '''
 
 ## Structure
 
